@@ -1,0 +1,32 @@
+#define urls to be checked with http
+http:
+  - {url: http://google.com}
+  - {url: http://google.com/a-non-existing-url, code: 404}
+  - {url: http://example.com/redirecting-url, code: 301}
+
+# the app name is used in the notifications, so you know where it comes from
+app_name: promon
+
+# the polling interval
+sleep: 180
+
+#optional path to logfile
+logfile: /var/log/promon.log
+
+notifiers:
+  -
+    method: prowl
+    apikey: theverysecrectprowlapikeygoeshere
+    
+  -
+    method: growl
+    host: 192.168.1.123
+    password: mylocalgrowlpassword
+    
+  -
+    method: mail
+    to: user@example.com
+    smtp_server: mail.example.com
+    smtp_username: the_user_name
+    smtp_password: a_password
+    smtp_port: 25
