@@ -1,10 +1,10 @@
 # promon | simple ruby website monitoring script
 
-This is stolen & inspired by [FindTheProblems][findproblems] by Matthew Riley MacPherson
+This is stolen & inspired by [FindTheProblems][FindTheProblems] by Matthew Riley MacPherson
 
 ## Features
 
-promon has three different kinds of notifiers: prowl, growl & mail
+promon has three different kinds of notifiers: [prowl][prowl], [growl][growl] & mail
 
 ## Configuration
 
@@ -18,5 +18,7 @@ promon uses [God][god] to run and be daemonized. An ``.god`` configuration file 
 
 
 
-[findproblems](https://github.com/tofumatt/FindTheProblems)
-[god](http://godrb.com/)
+[FindTheProblems]: https://github.com/tofumatt/FindTheProblems
+[god]: http://godrb.com/
+[prowl]: https://github.com/augustl/ruby-prowl
+[growl]: https://github.com/drbrain/ruby-growl
